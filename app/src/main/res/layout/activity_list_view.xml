@@ -40,7 +40,7 @@
                         android:shadowColor="#801F1F"
                         android:text="@string/c_tit"
                         android:textAlignment="center"
-                        android:textColor="@color/fog"
+                        android:textColor="@color/white"
                         android:textSize="20sp"
                         android:textStyle="bold"></TextView>
 

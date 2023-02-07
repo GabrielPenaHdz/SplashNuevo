@@ -15,9 +15,9 @@
     <string name="action_sign_in_short">Sign in</string>
 
     <string name="register_main">Registro</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="welcome">"Bienvenido !"</string>
+    <string name="invalid_username">Usuario invalido</string>
+    <string name="invalid_password">La contraseña debe superar los 5 caracteres</string>
     <string name="login_failed">"Login failed"</string>
     <string name="corr">Correo</string>
     <string name="batiz">¿Eres batiziano?</string>
@@ -34,7 +34,7 @@
     <string name="eda">Edad</string>
     <string name="pol">¿Eres politécnico?</string>
     <string name="fel">¿Eres feliz?</string>
-    <string name="emp">By: Technoswamp</string>
+    <string name="emp">By: Gabriel Peña</string>
     <string name="res">Recuperar</string>
     <string name="mu">Menú</string>
     <string name="xd">Empty</string>
@@ -53,8 +53,8 @@
     <string name="c">Concluir</string>
 
     <string name="c_con">Contraseña:</string>
-    <string name="c_tit">Mis contraseñas de Battle:</string>
-    <string name="c_bat">BattleTag:</string>
+    <string name="c_tit">Mis contraseñas de Redes sociales:</string>
+    <string name="c_bat">Red:</string>
 
     <string name="l_con">Estás son tus contraseñas:</string>
 
