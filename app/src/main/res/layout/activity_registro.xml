@@ -90,10 +90,10 @@
             android:text="@string/batiz"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.942"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline2"
-            app:layout_constraintVertical_bias="0.026" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <CheckBox
             android:id="@+id/polid"
@@ -102,10 +102,10 @@
             android:text="@string/pol"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline2"
-            app:layout_constraintVertical_bias="0.018" />
+            app:layout_constraintVertical_bias="0.002" />
 
         <TextView
             android:id="@+id/textView"
@@ -219,7 +219,7 @@
             android:layout_width="142dp"
             android:layout_height="90dp"
             android:layout_marginTop="1050dp"
-            android:backgroundTint="#efa516"
+            android:backgroundTint="@color/purple_200"
             android:text="@string/label4"
             app:cornerRadius="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -234,7 +234,7 @@
             android:layout_width="155dp"
             android:layout_height="53dp"
             android:layout_marginTop="1050dp"
-            android:backgroundTint="#efa516"
+            android:backgroundTint="@color/purple_200"
             android:text="@string/sig1"
             app:cornerRadius="12dp"
             app:layout_constraintBottom_toBottomOf="parent"

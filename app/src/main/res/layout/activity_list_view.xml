@@ -40,7 +40,7 @@
                         android:shadowColor="#801F1F"
                         android:text="@string/c_tit"
                         android:textAlignment="center"
-                        android:textColor="@color/fog"
+                        android:textColor="@color/white"
                         android:textSize="20sp"
                         android:textStyle="bold"></TextView>
 
@@ -67,7 +67,7 @@
                             android:id="@+id/textViewU"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@color/fog"
+                            android:background="@color/white"
                             android:paddingStart="10dp"></TextView>
 
                     </LinearLayout>
@@ -88,7 +88,7 @@
                             android:id="@+id/textViewC"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@color/fog"
+                            android:background="@color/white"
                             android:paddingStart="10dp"></TextView>
 
                     </LinearLayout>
@@ -97,7 +97,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="68dp"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/battle"></ImageView>
+                        android:src="@drawable/megafono"></ImageView>
                 </LinearLayout>
 
                 <LinearLayout

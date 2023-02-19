@@ -20,21 +20,21 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="corr">Correo</string>
-    <string name="batiz">¿Eres batiziano?</string>
+    <string name="batiz">¿Eres estudiante de Bátiz?</string>
     <string name="sig1">Continuar</string>
 
     <string name="eje">Correo example</string>
     <string name="man">Hombre</string>
     <string name="wom">Mujer</string>
     <string name="gen">Género</string>
-    <string name="not">¿Notificaciones?</string>
+    <string name="not">¿Quieres recibir notificaciones?</string>
 
     <string name="num">Número</string>
     <string name="fec">Fecha</string>
     <string name="eda">Edad</string>
-    <string name="pol">¿Eres politécnico?</string>
-    <string name="fel">¿Eres feliz?</string>
-    <string name="emp">By: Technoswamp</string>
+    <string name="pol">¿Eres Alumno Regular?</string>
+    <string name="fel">¿Ya vas a salir?</string>
+    <string name="emp">En memoria de Yacate </string>
     <string name="res">Recuperar</string>
     <string name="mu">Menú</string>
     <string name="xd">Empty</string>
@@ -53,8 +53,8 @@
     <string name="c">Concluir</string>
 
     <string name="c_con">Contraseña:</string>
-    <string name="c_tit">Mis contraseñas de Battle:</string>
-    <string name="c_bat">BattleTag:</string>
+    <string name="c_tit">Mis contraseñas:</string>
+    <string name="c_bat">Usuario:</string>
 
     <string name="l_con">Estás son tus contraseñas:</string>
 
