@@ -48,17 +48,14 @@ public class login_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        button2 = findViewById(R.id.registroid);
         button1 = findViewById(R.id.accesarid);
+        button2 = findViewById(R.id.registroid);
         button3 = findViewById(R.id.olvidoid);
         EditText usuario = findViewById(R.id.userNameid);
         EditText pswds = findViewById(R.id.editTextTextPassword);
         Read();
         json2List(json);
-        if (json == null || json.length() == 0){
-            button1.setEnabled(false);
-            button3.setEnabled(false);
-        }
+
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -82,75 +79,26 @@ public class login_activity extends AppCompatActivity {
             }
         });
     }
-    public boolean Read(){
-        if(!isFileExits()){
-            return false;
-        }
-        File file = getFile();
-        FileInputStream fileInputStream = null;
-        byte[] bytes = null;
-        bytes = new byte[(int)file.length()];
-        try {
-            fileInputStream = new FileInputStream(file);
-            fileInputStream.read(bytes);
-            json=new String(bytes);
-            Log.d(TAG,json);
-            json= myDesUtil.desCifrar(json);
-            Log.d(TAG,json);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return false;
-    }
-    public void json2List( String json )
-    {
-        Gson gson = null;
-        String mensaje = null;
-        if (json == null || json.length() == 0)
-        {
-
-            Toast.makeText(getApplicationContext(), "Error json null or empty", Toast.LENGTH_LONG).show();
-            return;
-        }
-        gson = new Gson();
-        Type listType = new TypeToken<ArrayList<MyInfo>>(){}.getType();
-        list = gson.fromJson(json, listType);
-        if (list == null || list.size() == 0 )
-        {
-            Toast.makeText(getApplicationContext(), "Error list is null or empty", Toast.LENGTH_LONG).show();
-            return;
-        }
-    }
-    private File getFile( )
-    {
-        return new File( getDataDir() , registro.archivo );
-    }
-    private boolean isFileExits( )
-    {
-        File file = getFile( );
-        if( file == null )
-        {
-            return false;
-        }
-        return file.isFile() && file.exists();
-    }
     public void acceso(String usr , String pswd){
         int i=0;
         if(usr.equals("")||pswd.equals("")){
-            Toast.makeText(getApplicationContext(), "Llena los campos", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Campos vacios, favor de llenarlos", Toast.LENGTH_LONG).show();
         }else{
-            for(MyInfo myInfo : list){
-                if(myInfo.getUser().equals(usr)&&myInfo.getContrasena().equals(pswd)){
+            DBUsuarios dbUsuarios = new DbUsuarios(login_activity.this);
+            MyInfo myInfo = dbUsuarios.GetUsuario(usr);
+            if (myInfo!= null){
+                if (myInfo.getContrasena().equals(pswd)){
+                    Toast.makeText(getApplicationContext(), "Se ha iniciado sesión", Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(login_activity.this, principal.class);
                     intent.putExtra("Objeto", myInfo);
                     startActivity(intent);
-                    i=1;
                 }
             }
             if(i==0){
                 Toast.makeText(getApplicationContext(), "El usuario o contraseña son incorrectos", Toast.LENGTH_LONG).show();
+            }
+            else{
+                Toast.makeText(getApplicationContext(), "Usuario NOT FOUND", Toast.LENGTH_LONG).show();
             }
         }
     }

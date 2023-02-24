@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cluster {
-    public static final String TAG = "Brian :D";
+    public static final String TAG = "Oaxaka";
     private static final char[] HEX_ARRAY = "0123456789ABCDEF".toCharArray();
 
 
@@ -87,12 +87,13 @@ public class Cluster {
         info.setContrasena(pass);
         info.setNumero(registro.tel);
         info.setFecha(registro.dat);
-        info.setEscuela(registro.chec);
         info.setCorreo(registro.email);
         info.setGen(registro.on);
         info.setNotifi(registro.sw);
         info.setFeliz(registro.tog);
         info.setEdad(registro.ed);
+        info.setBox1(registro.box1s);
+        info.setBox2(registro.box2s);
     }
     public static void vaciaJson(String json){
         json = null;
